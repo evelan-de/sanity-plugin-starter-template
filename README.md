@@ -1,52 +1,6 @@
-# Sanity Plugin Media Video
+# Sanity Plugin Starter Template
 
-A Sanity plugin for adding a media object (Image/Video) to your sanity studio schemas and displaying the media with built-in functionalities such as auto-play, custom PiP on scroll, etc.
-
-> This is a **Sanity Studio v3** plugin.
-
-## Installation
-
-```sh
-npm install sanity-plugin-media-video
-```
-
-## Usage
-
-Add it as a plugin in `sanity.config.ts` (or .js):
-
-```ts
-import { defineConfig } from 'sanity';
-import { syncContentPlugin } from 'sanity-plugin-media-video';
-
-export default defineConfig({
-  //...
-  plugins: [
-    // ...other plugins
-    sanityPluginMediaVideo(),
-  ],
-});
-```
-
-Just add directly the defineField for copyPaste directly into any of your referenced block array like so:
-
-```ts
-import { defineConfig } from 'sanity';
-import { copyPaste } from 'sanity-plugin-sync-content';
-
-export default defineType({
-  name: 'my-section',
-  title: 'My Example Section',
-  type: 'object',
-  fields: [
-    defineField({
-      name: 'my-custom-media-field',
-      title: 'My Custom Media Field',
-      type: 'media',
-    }),
-    // ...your-other-fields
-  ],
-});
-```
+A starter template for creating a clean slate of a Sanity Plugin which includes eslint, prettier, typescript, commitlint, husky, lint-staged, and more.
 
 ## License
 
